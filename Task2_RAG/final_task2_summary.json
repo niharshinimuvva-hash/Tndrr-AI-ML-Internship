@@ -1,0 +1,32 @@
+{
+    "document": "NIST AI RMF 1.0",
+    "document_pages": 48,
+    "questions_evaluated": 15,
+    "chunk_sizes": [
+        300,
+        600
+    ],
+    "evaluation": {
+        "method": "Dense retrieval Recall@5",
+        "relevance_labels": "Manually selected primary evidence pages; provisional",
+        "recall_at_5_300_words": 65.44,
+        "recall_at_5_600_words": 49.33
+    },
+    "retrieval_methods": [
+        "Dense retrieval",
+        "BM25",
+        "Dense retrieval with cross-encoder reranking"
+    ],
+    "failure_analysis": {
+        "documented_failures": 1,
+        "successful_fixes": [
+            "Query expansion retrieved the relevant passage on page 35 at rank 3."
+        ],
+        "second_failure": "Not established"
+    },
+    "limitations": [
+        "Relevance labels are manually selected and provisional.",
+        "The reported Recall@5 comparison uses dense retrieval.",
+        "Only one genuine retrieval failure and successful fix was verified."
+    ]
+}

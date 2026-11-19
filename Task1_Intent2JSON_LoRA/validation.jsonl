@@ -1,0 +1,50 @@
+{"request": "Find a hotel in Mumbai for 2 guests starting December 12.", "output": {"intent": "hotel_booking", "destination": "Mumbai", "date": "December 12", "time": null, "party_size": 2, "item": null}}
+{"request": "Tell me the weather forecast for Chennai.", "output": {"intent": "weather_query", "destination": "Chennai", "date": null, "time": null, "party_size": null, "item": null}}
+{"request": "Find a Indian restaurant in Delhi for 2 people on tomorrow at 6 PM.", "output": {"intent": "restaurant_booking", "destination": "Delhi", "date": "tomorrow", "time": "6 PM", "party_size": 2, "item": "Indian restaurant"}}
+{"request": "Show me available flights to Bengaluru.", "output": {"intent": "flight_search", "destination": "Bengaluru", "date": null, "time": null, "party_size": null, "item": null}}
+{"request": "I want to fly to Kolkata December 12.", "output": {"intent": "flight_search", "destination": "Kolkata", "date": "December 12", "time": null, "party_size": null, "item": null}}
+{"request": "Check today's weather in Chennai.", "output": {"intent": "weather_query", "destination": "Chennai", "date": null, "time": null, "party_size": null, "item": null}}
+{"request": "Can you check the status of ORD32431?", "output": {"intent": "order_tracking", "destination": null, "date": null, "time": null, "party_size": null, "item": "ORD32431"}}
+{"request": "Check today's weather in Delhi.", "output": {"intent": "weather_query", "destination": "Delhi", "date": "today", "time": null, "party_size": null, "item": null}}
+{"request": "Can you reserve a table for 5 people in Goa today at 7 PM?", "output": {"intent": "restaurant_booking", "destination": "Goa", "date": "today", "time": "7 PM", "party_size": 5, "item": null}}
+{"request": "Reserve a hotel in Bengaluru for 5 people.", "output": {"intent": "hotel_booking", "destination": "Bengaluru", "date": null, "time": null, "party_size": 5, "item": null}}
+{"request": "Check delivery status for order ORD99593.", "output": {"intent": "order_tracking", "destination": null, "date": null, "time": null, "party_size": null, "item": "ORD99593"}}
+{"request": "Search for the best running shoes.", "output": {"intent": "product_search", "destination": null, "date": null, "time": null, "party_size": null, "item": "running shoes"}}
+{"request": "Track my order ORD16006.", "output": {"intent": "order_tracking", "destination": null, "date": null, "time": null, "party_size": null, "item": "ORD16006"}}
+{"request": "I want to track parcel ORD28289.", "output": {"intent": "order_tracking", "destination": null, "date": null, "time": null, "party_size": null, "item": "ORD28289"}}
+{"request": "Show me available flights to Delhi.", "output": {"intent": "flight_search", "destination": "Delhi", "date": null, "time": null, "party_size": null, "item": null}}
+{"request": "Find a Italian restaurant in Kolkata for 3 people on December 5 at 7 PM.", "output": {"intent": "restaurant_booking", "destination": "Kolkata", "date": "December 5", "time": "7 PM", "party_size": 3, "item": "Italian restaurant"}}
+{"request": "Find me Bluetooth speakers.", "output": {"intent": "product_search", "destination": null, "date": null, "time": null, "party_size": null, "item": "Bluetooth speakers"}}
+{"request": "Book a hotel room in Delhi from tomorrow for 3 people.", "output": {"intent": "hotel_booking", "destination": "Delhi", "date": "tomorrow", "time": null, "party_size": 3, "item": null}}
+{"request": "Book a hotel room in Jaipur from today for 3 people.", "output": {"intent": "hotel_booking", "destination": "Jaipur", "date": "today", "time": null, "party_size": 3, "item": null}}
+{"request": "I want to track parcel ORD39871.", "output": {"intent": "order_tracking", "destination": null, "date": null, "time": null, "party_size": null, "item": "ORD39871"}}
+{"request": "Show me available Bluetooth speakers.", "output": {"intent": "product_search", "destination": null, "date": null, "time": null, "party_size": null, "item": "Bluetooth speakers"}}
+{"request": "Check today's weather in Jaipur.", "output": {"intent": "weather_query", "destination": "Jaipur", "date": null, "time": null, "party_size": null, "item": null}}
+{"request": "What is the weather in Kolkata?", "output": {"intent": "weather_query", "destination": "Kolkata", "date": null, "time": null, "party_size": null, "item": null}}
+{"request": "Show me available smartphones.", "output": {"intent": "product_search", "destination": null, "date": null, "time": null, "party_size": null, "item": "smartphones"}}
+{"request": "Can you reserve a table for 5 people in Chennai January 10 at 6 PM?", "output": {"intent": "restaurant_booking", "destination": "Chennai", "date": "January 10", "time": "6 PM", "party_size": 5, "item": null}}
+{"request": "Where can I buy running shoes?", "output": {"intent": "product_search", "destination": null, "date": null, "time": null, "party_size": null, "item": "running shoes"}}
+{"request": "What is the weather in Kolkata?", "output": {"intent": "weather_query", "destination": "Kolkata", "date": null, "time": null, "party_size": null, "item": null}}
+{"request": "I want to purchase laptops.", "output": {"intent": "product_search", "destination": null, "date": null, "time": null, "party_size": null, "item": "laptops"}}
+{"request": "Book a hotel room in Goa from December 12 for 6 people.", "output": {"intent": "hotel_booking", "destination": "Goa", "date": "December 12", "time": null, "party_size": 6, "item": null}}
+{"request": "Search for hotels in Pune starting January 10.", "output": {"intent": "hotel_booking", "destination": "Pune", "date": "January 10", "time": null, "party_size": null, "item": null}}
+{"request": "What is the weather in Mumbai?", "output": {"intent": "weather_query", "destination": "Mumbai", "date": null, "time": null, "party_size": null, "item": null}}
+{"request": "Find flights to Hyderabad on next Monday.", "output": {"intent": "flight_search", "destination": "Hyderabad", "date": "next Monday", "time": null, "party_size": null, "item": null}}
+{"request": "Show me available flights to Mumbai.", "output": {"intent": "flight_search", "destination": "Mumbai", "date": null, "time": null, "party_size": null, "item": null}}
+{"request": "Find me running shoes.", "output": {"intent": "product_search", "destination": null, "date": null, "time": null, "party_size": null, "item": "running shoes"}}
+{"request": "Track my order ORD40495.", "output": {"intent": "order_tracking", "destination": null, "date": null, "time": null, "party_size": null, "item": "ORD40495"}}
+{"request": "Find a Mexican restaurant in Hyderabad for 2 people on tomorrow at 7 PM.", "output": {"intent": "restaurant_booking", "destination": "Hyderabad", "date": "tomorrow", "time": "7 PM", "party_size": 2, "item": "Mexican restaurant"}}
+{"request": "Track my order ORD20328.", "output": {"intent": "order_tracking", "destination": null, "date": null, "time": null, "party_size": null, "item": "ORD20328"}}
+{"request": "Track my order ORD23238.", "output": {"intent": "order_tracking", "destination": null, "date": null, "time": null, "party_size": null, "item": "ORD23238"}}
+{"request": "Tell me the weather forecast for Vijayawada.", "output": {"intent": "weather_query", "destination": "Vijayawada", "date": null, "time": null, "party_size": null, "item": null}}
+{"request": "Find a Italian restaurant in Bengaluru for 4 people on next Monday at 12 PM.", "output": {"intent": "restaurant_booking", "destination": "Bengaluru", "date": "next Monday", "time": "12 PM", "party_size": 4, "item": "Italian restaurant"}}
+{"request": "Find a hotel in Vijayawada for 6 guests starting next Monday.", "output": {"intent": "hotel_booking", "destination": "Vijayawada", "date": "next Monday", "time": null, "party_size": 6, "item": null}}
+{"request": "I want to fly to Chennai next Monday.", "output": {"intent": "flight_search", "destination": "Chennai", "date": "next Monday", "time": null, "party_size": null, "item": null}}
+{"request": "Search for hotels in Vijayawada starting December 5.", "output": {"intent": "hotel_booking", "destination": "Vijayawada", "date": "December 5", "time": null, "party_size": null, "item": null}}
+{"request": "I want to fly to Bengaluru this weekend.", "output": {"intent": "flight_search", "destination": "Bengaluru", "date": "this weekend", "time": null, "party_size": null, "item": null}}
+{"request": "Show me available running shoes.", "output": {"intent": "product_search", "destination": null, "date": null, "time": null, "party_size": null, "item": "running shoes"}}
+{"request": "Find a Thai restaurant in Hyderabad for 4 people on December 5 at 6 PM.", "output": {"intent": "restaurant_booking", "destination": "Hyderabad", "date": "December 5", "time": "6 PM", "party_size": 4, "item": "Thai restaurant"}}
+{"request": "Find a Thai restaurant in Jaipur for 2 people on this weekend at 6 PM.", "output": {"intent": "restaurant_booking", "destination": "Jaipur", "date": "this weekend", "time": "6 PM", "party_size": 2, "item": "Thai restaurant"}}
+{"request": "Can you reserve a table for 1 people in Goa this weekend at 9:30 AM?", "output": {"intent": "restaurant_booking", "destination": "Goa", "date": "this weekend", "time": "9:30 AM", "party_size": 1, "item": null}}
+{"request": "I want to fly to Jaipur this weekend.", "output": {"intent": "flight_search", "destination": "Jaipur", "date": "this weekend", "time": null, "party_size": null, "item": null}}
+{"request": "Search for the best smart watches.", "output": {"intent": "product_search", "destination": null, "date": null, "time": null, "party_size": null, "item": "smart watches"}}

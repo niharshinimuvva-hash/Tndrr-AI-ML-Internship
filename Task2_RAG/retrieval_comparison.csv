@@ -1,0 +1,7 @@
+Method,Chunk size,Recall@5 (%)
+Dense retrieval,300,100.0
+Dense retrieval,600,100.0
+BM25,300,100.0
+BM25,600,100.0
+Dense + reranker,300,100.0
+Dense + reranker,600,100.0

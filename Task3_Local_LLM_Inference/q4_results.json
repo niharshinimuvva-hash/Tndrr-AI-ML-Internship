@@ -1,0 +1,104 @@
+{
+    "model": "Qwen/Qwen2.5-1.5B-Instruct",
+    "configuration": "4-bit NF4",
+    "number_of_prompts": 10,
+    "total_generated_tokens": 1280,
+    "total_generation_time_seconds": 99.802,
+    "average_generation_tokens_per_second": 12.83,
+    "peak_gpu_memory_allocated_gb": 1.092,
+    "peak_gpu_memory_reserved_gb": 2.918,
+    "results": [
+        {
+            "prompt_id": 1,
+            "prompt": "Explain machine learning in simple terms.",
+            "answer": "Machine learning is a type of artificial intelligence that allows computers to learn from data and improve their performance on specific tasks over time without being explicitly programmed. It involves using algorithms and statistical models to analyze large datasets and identify patterns or trends that can be used for prediction or decision-making.\n\nIn simpler terms, imagine you have a group of people who each have different heights. If someone wants to predict the height of another person based on this information, they would need to know all the individual heights. However, if we use machine learning, we can train a model to recognize patterns in the data (in this case, the relationship between two variables) and",
+            "input_tokens": 37,
+            "generated_tokens": 128,
+            "generation_time_seconds": 10.6248,
+            "generation_tokens_per_second": 12.05
+        },
+        {
+            "prompt_id": 2,
+            "prompt": "What is the difference between AI and deep learning?",
+            "answer": "Artificial Intelligence (AI) refers to the simulation of human intelligence in machines that are programmed to perform tasks that would otherwise require human intelligence. It encompasses various subfields such as machine learning, natural language processing, computer vision, robotics, etc.\n\nDeep Learning, on the other hand, is a subset of Machine Learning that uses neural networks with many layers to learn representations of data at multiple levels of abstraction. Deep learning algorithms can be used for tasks like image recognition, speech recognition, and natural language processing.\n\nThe main difference between AI and deep learning lies in their scope and application. AI includes all aspects of intelligent behavior, while deep learning specifically",
+            "input_tokens": 39,
+            "generated_tokens": 128,
+            "generation_time_seconds": 13.5844,
+            "generation_tokens_per_second": 9.42
+        },
+        {
+            "prompt_id": 3,
+            "prompt": "Write a Python function to check whether a number is prime.",
+            "answer": "Certainly! Here's a Python function that checks if a given number is prime:\n\n```python\ndef is_prime(n):\n    \"\"\"\n    Check if the provided integer n is a prime number.\n    \n    Parameters:\n        n (int): The number to check for primality.\n        \n    Returns:\n        bool: True if n is prime, False otherwise.\n    \"\"\"\n    if n <= 1:\n        return False\n    if n == 2 or n == 3:\n        return True\n    if n % 2 == 0 or n % 3 == 0:\n        return False\n    \n    # Only need to check",
+            "input_tokens": 41,
+            "generated_tokens": 128,
+            "generation_time_seconds": 9.7059,
+            "generation_tokens_per_second": 13.19
+        },
+        {
+            "prompt_id": 4,
+            "prompt": "Explain REST APIs with a practical example.",
+            "answer": "RESTful (Representational State Transfer) is an architectural style for designing web services and applications that use HTTP to exchange data between clients and servers. It provides a set of rules and guidelines for creating efficient and scalable web-based systems.\n\nHere's a practical example of how RESTful APIs work:\n\nLet's say you have a website where users can create, read, update, or delete notes. The server-side application would need to support these operations in order to handle requests from the client.\n\n1. **Create Note**: A user wants to add a new note to their account. They send a POST request to the `/notes` endpoint with the",
+            "input_tokens": 38,
+            "generated_tokens": 128,
+            "generation_time_seconds": 9.6937,
+            "generation_tokens_per_second": 13.2
+        },
+        {
+            "prompt_id": 5,
+            "prompt": "What are the advantages of database normalization?",
+            "answer": "Database normalization is a process that organizes data in a structured manner to improve data integrity and efficiency. The main advantage of database normalization is improved data integrity. By organizing data into tables with specific relationships between them, it becomes easier to maintain consistency across all records.\n\nAnother advantage of normalization is reduced redundancy. Redundancy refers to the repetition of information within different parts of a database. Normalization helps reduce this by ensuring that each piece of data is stored only once, reducing the risk of errors or inconsistencies.\n\nAdditionally, normalization can help improve performance by minimizing the number of joins required to retrieve data from multiple tables. This reduces the time needed to",
+            "input_tokens": 37,
+            "generated_tokens": 128,
+            "generation_time_seconds": 9.2145,
+            "generation_tokens_per_second": 13.89
+        },
+        {
+            "prompt_id": 6,
+            "prompt": "Explain overfitting and how to prevent it.",
+            "answer": "Overfitting is a common problem in machine learning where the model performs well on training data but poorly on new, unseen data. This occurs when a model learns too much from the training data, capturing noise or random variations that do not generalize to real-world scenarios.\n\nTo prevent overfitting, several strategies can be employed:\n\n1. **Data Augmentation**: Increase the amount of available data through techniques like adding noise, rotating images, or changing the scale of objects within an image. This helps the model learn more robust features.\n\n2. **Regularization**: Add penalties to the loss function to discourage overly complex models. Common regularization methods include",
+            "input_tokens": 40,
+            "generated_tokens": 128,
+            "generation_time_seconds": 9.2637,
+            "generation_tokens_per_second": 13.82
+        },
+        {
+            "prompt_id": 7,
+            "prompt": "What is cloud computing? Describe its main service models.",
+            "answer": "Cloud computing refers to the delivery of computing services over the internet (\"the cloud\"). These services can be accessed anytime and anywhere through various devices such as computers, smartphones, or tablets.\n\nThe main service models in cloud computing include:\n\n1. Infrastructure as a Service (IaaS): This model provides virtualized resources like servers, storage, databases, networking, and operating systems on which applications run.\n2. Platform as a Service (PaaS): In this model, developers have access to an environment where they can deploy their own applications without having to manage the underlying infrastructure.\n3. Software as a Service (SaaS): Here, users pay for",
+            "input_tokens": 40,
+            "generated_tokens": 128,
+            "generation_time_seconds": 9.6365,
+            "generation_tokens_per_second": 13.28
+        },
+        {
+            "prompt_id": 8,
+            "prompt": "Explain the working of a binary search algorithm.",
+            "answer": "Binary search is an efficient searching algorithm that operates on sorted arrays or lists. It works by repeatedly dividing in half the portion of the list which contains elements to find the desired value.\n\nHere's how it works:\n\n1. **Initialization**: Start with the middle element of the array. If this element is equal to the target value, then return its index.\n2. **Comparison and Division**: Compare the target value with the middle element:\n   - If the target value is less than the middle element, repeat the process on the left half of the array (i.e., the first half).\n   - If the target value is greater than the",
+            "input_tokens": 39,
+            "generated_tokens": 128,
+            "generation_time_seconds": 9.5226,
+            "generation_tokens_per_second": 13.44
+        },
+        {
+            "prompt_id": 9,
+            "prompt": "What are the major challenges in deploying AI systems?",
+            "answer": "Deploying AI systems can be challenging due to several factors:\n\n1. **Data Quality and Availability**: High-quality data is essential for training effective AI models. However, obtaining sufficient and high-quality data can be difficult or expensive.\n\n2. **Model Complexity and Interpretability**: Advanced AI models often involve complex algorithms that may not always be easy to understand or interpret. This can make them less accessible and harder to trust.\n\n3. **Ethical Considerations**: Deploying AI systems raises ethical concerns such as bias, privacy issues, and potential misuse of personal data.\n\n4. **Scalability and Performance**: As AI systems grow more powerful,",
+            "input_tokens": 39,
+            "generated_tokens": 128,
+            "generation_time_seconds": 8.922,
+            "generation_tokens_per_second": 14.35
+        },
+        {
+            "prompt_id": 10,
+            "prompt": "Write a short explanation of cybersecurity best practices.",
+            "answer": "Cybersecurity best practices refer to the set of guidelines and procedures designed to protect computer systems, networks, and data from unauthorized access, theft, or damage. These practices aim to safeguard sensitive information and prevent cyber attacks that could cause significant harm.\n\nKey cybersecurity best practices include:\n\n1. **Implementing Strong Passwords**: Use strong, unique passwords for all accounts and enable two-factor authentication where possible.\n2. **Regular Updates and Patch Management**: Keep software and operating systems up-to-date with the latest security patches and updates.\n3. **Data Encryption**: Encrypt sensitive data both at rest (stored) and in transit (sent over the internet",
+            "input_tokens": 38,
+            "generated_tokens": 128,
+            "generation_time_seconds": 9.6336,
+            "generation_tokens_per_second": 13.29
+        }
+    ],
+    "model_loading_time_seconds": 14.43,
+    "model_loading_memory_gb": 1.083
+}

@@ -1,0 +1,1188 @@
+[
+  {
+    "request": "Track my order ORD22280.",
+    "expected": {
+      "intent": "order_tracking",
+      "destination": null,
+      "date": null,
+      "time": null,
+      "party_size": null,
+      "item": "ORD22280"
+    },
+    "predicted": {
+      "intent": "order_tracking",
+      "destination": "ORD22280",
+      "date": "",
+      "time": "",
+      "party_size": null,
+      "item": ""
+    },
+    "raw_response": "{\n  \"intent\": \"order_tracking\",\n  \"destination\": \"ORD22280\",\n  \"date\": \"\",\n  \"time\": \"\",\n  \"party_size\": null,\n  \"item\": \"\"\n}"
+  },
+  {
+    "request": "I need accommodation in Vijayawada for 3 guests.",
+    "expected": {
+      "intent": "hotel_booking",
+      "destination": "Vijayawada",
+      "date": null,
+      "time": null,
+      "party_size": 3,
+      "item": null
+    },
+    "predicted": {
+      "intent": "hotel_booking",
+      "destination": "Vijayawada",
+      "date": "today",
+      "time": "",
+      "party_size": 3,
+      "item": ""
+    },
+    "raw_response": "{\n  \"intent\": \"hotel_booking\",\n  \"destination\": \"Vijayawada\",\n  \"date\": \"today\",\n  \"time\": \"\",\n  \"party_size\": 3,\n  \"item\": \"\"\n}"
+  },
+  {
+    "request": "Search for an air ticket to Chennai for this weekend.",
+    "expected": {
+      "intent": "flight_search",
+      "destination": "Chennai",
+      "date": "this weekend",
+      "time": null,
+      "party_size": null,
+      "item": null
+    },
+    "predicted": {
+      "intent": "air_ticket",
+      "destination": "Chennai",
+      "date": "this weekend",
+      "time": "",
+      "party_size": null,
+      "item": ""
+    },
+    "raw_response": "{\n  \"intent\": \"air_ticket\",\n  \"destination\": \"Chennai\",\n  \"date\": \"this weekend\",\n  \"time\": \"\",\n  \"party_size\": null,\n  \"item\": \"\"\n}"
+  },
+  {
+    "request": "Can you reserve a table for 4 people in Delhi today at 7 PM?",
+    "expected": {
+      "intent": "restaurant_booking",
+      "destination": "Delhi",
+      "date": "today",
+      "time": "7 PM",
+      "party_size": 4,
+      "item": null
+    },
+    "predicted": {
+      "intent": "restaurant_booking",
+      "destination": "Delhi",
+      "date": "today",
+      "time": "7 PM",
+      "party_size": 4,
+      "item": null
+    },
+    "raw_response": "{\n  \"intent\": \"restaurant_booking\",\n  \"destination\": \"Delhi\",\n  \"date\": \"today\",\n  \"time\": \"7 PM\",\n  \"party_size\": 4,\n  \"item\": null\n}"
+  },
+  {
+    "request": "Check delivery status for order ORD46463.",
+    "expected": {
+      "intent": "order_tracking",
+      "destination": null,
+      "date": null,
+      "time": null,
+      "party_size": null,
+      "item": "ORD46463"
+    },
+    "predicted": {
+      "intent": "order tracking",
+      "destination": "ORD46463",
+      "date": "",
+      "time": "",
+      "party_size": null,
+      "item": ""
+    },
+    "raw_response": "{\n  \"intent\": \"order tracking\",\n  \"destination\": \"ORD46463\",\n  \"date\": \"\",\n  \"time\": \"\",\n  \"party_size\": null,\n  \"item\": \"\"\n}"
+  },
+  {
+    "request": "Search for an air ticket to Hyderabad for January 10.",
+    "expected": {
+      "intent": "flight_search",
+      "destination": "Hyderabad",
+      "date": "January 10",
+      "time": null,
+      "party_size": null,
+      "item": null
+    },
+    "predicted": {
+      "intent": "air_ticket",
+      "destination": "Hyderabad",
+      "date": "January 10",
+      "time": "",
+      "party_size": null,
+      "item": ""
+    },
+    "raw_response": "{\n  \"intent\": \"air_ticket\",\n  \"destination\": \"Hyderabad\",\n  \"date\": \"January 10\",\n  \"time\": \"\",\n  \"party_size\": null,\n  \"item\": \"\"\n}"
+  },
+  {
+    "request": "Search for the best Bluetooth speakers.",
+    "expected": {
+      "intent": "product_search",
+      "destination": null,
+      "date": null,
+      "time": null,
+      "party_size": null,
+      "item": "Bluetooth speakers"
+    },
+    "predicted": {
+      "intent": "product_search",
+      "destination": "Bluetooth speakers",
+      "date": "",
+      "time": "",
+      "party_size": null,
+      "item": "best Bluetooth speakers"
+    },
+    "raw_response": "{\n  \"intent\": \"product_search\",\n  \"destination\": \"Bluetooth speakers\",\n  \"date\": \"\",\n  \"time\": \"\",\n  \"party_size\": null,\n  \"item\": \"best Bluetooth speakers\"\n}"
+  },
+  {
+    "request": "Search for the best wireless headphones.",
+    "expected": {
+      "intent": "product_search",
+      "destination": null,
+      "date": null,
+      "time": null,
+      "party_size": null,
+      "item": "wireless headphones"
+    },
+    "predicted": {
+      "intent": "product_search",
+      "destination": "wireless_headphones",
+      "date": "",
+      "time": "",
+      "party_size": null,
+      "item": "best_wireless_headphones"
+    },
+    "raw_response": "{\n  \"intent\": \"product_search\",\n  \"destination\": \"wireless_headphones\",\n  \"date\": \"\",\n  \"time\": \"\",\n  \"party_size\": null,\n  \"item\": \"best_wireless_headphones\"\n}"
+  },
+  {
+    "request": "I need accommodation in Chennai for 5 guests.",
+    "expected": {
+      "intent": "hotel_booking",
+      "destination": "Chennai",
+      "date": null,
+      "time": null,
+      "party_size": 5,
+      "item": null
+    },
+    "predicted": {
+      "intent": "hotel_booking",
+      "destination": "Chennai",
+      "date": "2023-10-01",
+      "time": "",
+      "party_size": 5,
+      "item": ""
+    },
+    "raw_response": "{\n  \"intent\": \"hotel_booking\",\n  \"destination\": \"Chennai\",\n  \"date\": \"2023-10-01\",\n  \"time\": \"\",\n  \"party_size\": 5,\n  \"item\": \"\"\n}"
+  },
+  {
+    "request": "Where is shipment ORD83563?",
+    "expected": {
+      "intent": "order_tracking",
+      "destination": null,
+      "date": null,
+      "time": null,
+      "party_size": null,
+      "item": "ORD83563"
+    },
+    "predicted": {
+      "intent": "order_tracking",
+      "destination": "ORD83563",
+      "date": "",
+      "time": "",
+      "party_size": null,
+      "item": ""
+    },
+    "raw_response": "{\n  \"intent\": \"order_tracking\",\n  \"destination\": \"ORD83563\",\n  \"date\": \"\",\n  \"time\": \"\",\n  \"party_size\": null,\n  \"item\": \"\"\n}"
+  },
+  {
+    "request": "I want to purchase Bluetooth speakers.",
+    "expected": {
+      "intent": "product_search",
+      "destination": null,
+      "date": null,
+      "time": null,
+      "party_size": null,
+      "item": "Bluetooth speakers"
+    },
+    "predicted": {
+      "intent": "product_search",
+      "destination": "electronics_store",
+      "date": "",
+      "time": "",
+      "party_size": null,
+      "item": "Bluetooth speakers"
+    },
+    "raw_response": "{\n  \"intent\": \"product_search\",\n  \"destination\": \"electronics_store\",\n  \"date\": \"\",\n  \"time\": \"\",\n  \"party_size\": null,\n  \"item\": \"Bluetooth speakers\"\n}"
+  },
+  {
+    "request": "Will it rain in Bengaluru January 10?",
+    "expected": {
+      "intent": "weather_query",
+      "destination": "Bengaluru",
+      "date": "January 10",
+      "time": null,
+      "party_size": null,
+      "item": null
+    },
+    "predicted": {
+      "intent": "weather_query",
+      "destination": "Bengaluru",
+      "date": "January 10",
+      "time": "",
+      "party_size": null,
+      "item": ""
+    },
+    "raw_response": "{\n  \"intent\": \"weather_query\",\n  \"destination\": \"Bengaluru\",\n  \"date\": \"January 10\",\n  \"time\": \"\",\n  \"party_size\": null,\n  \"item\": \"\"\n}"
+  },
+  {
+    "request": "Search for hotels in Chennai starting next Monday.",
+    "expected": {
+      "intent": "hotel_booking",
+      "destination": "Chennai",
+      "date": "next Monday",
+      "time": null,
+      "party_size": null,
+      "item": null
+    },
+    "predicted": {
+      "intent": "hotel_search",
+      "destination": "Chennai",
+      "date": "next_monday",
+      "time": "",
+      "party_size": null,
+      "item": ""
+    },
+    "raw_response": "{\n  \"intent\": \"hotel_search\",\n  \"destination\": \"Chennai\",\n  \"date\": \"next_monday\",\n  \"time\": \"\",\n  \"party_size\": null,\n  \"item\": \"\"\n}"
+  },
+  {
+    "request": "Where can I buy wireless headphones?",
+    "expected": {
+      "intent": "product_search",
+      "destination": null,
+      "date": null,
+      "time": null,
+      "party_size": null,
+      "item": "wireless headphones"
+    },
+    "predicted": {
+      "intent": "product_search",
+      "destination": "electronics_store",
+      "date": "",
+      "time": "",
+      "party_size": null,
+      "item": "wireless_headphones"
+    },
+    "raw_response": "{\n  \"intent\": \"product_search\",\n  \"destination\": \"electronics_store\",\n  \"date\": \"\",\n  \"time\": \"\",\n  \"party_size\": null,\n  \"item\": \"wireless_headphones\"\n}"
+  },
+  {
+    "request": "Will it rain in Hyderabad this weekend?",
+    "expected": {
+      "intent": "weather_query",
+      "destination": "Hyderabad",
+      "date": "this weekend",
+      "time": null,
+      "party_size": null,
+      "item": null
+    },
+    "predicted": {
+      "intent": "weather_query",
+      "destination": null,
+      "date": "this weekend",
+      "time": null,
+      "party_size": null,
+      "item": null
+    },
+    "raw_response": "{\n  \"intent\": \"weather_query\",\n  \"destination\": null,\n  \"date\": \"this weekend\",\n  \"time\": null,\n  \"party_size\": null,\n  \"item\": null\n}"
+  },
+  {
+    "request": "Find a Italian restaurant in Chennai for 6 people on November 30 at 5:30 PM.",
+    "expected": {
+      "intent": "restaurant_booking",
+      "destination": "Chennai",
+      "date": "November 30",
+      "time": "5:30 PM",
+      "party_size": 6,
+      "item": "Italian restaurant"
+    },
+    "predicted": {
+      "intent": "restaurant_booking",
+      "destination": "Chennai",
+      "date": "November 30",
+      "time": "18:30",
+      "party_size": 6,
+      "item": "Italian restaurant"
+    },
+    "raw_response": "{\n  \"intent\": \"restaurant_booking\",\n  \"destination\": \"Chennai\",\n  \"date\": \"November 30\",\n  \"time\": \"18:30\",\n  \"party_size\": 6,\n  \"item\": \"Italian restaurant\"\n}"
+  },
+  {
+    "request": "Reserve a hotel in Mumbai for 1 people.",
+    "expected": {
+      "intent": "hotel_booking",
+      "destination": "Mumbai",
+      "date": null,
+      "time": null,
+      "party_size": 1,
+      "item": null
+    },
+    "predicted": {
+      "intent": "hotel_booking",
+      "destination": "Mumbai",
+      "date": "today",
+      "time": "",
+      "party_size": 1,
+      "item": ""
+    },
+    "raw_response": "{\n  \"intent\": \"hotel_booking\",\n  \"destination\": \"Mumbai\",\n  \"date\": \"today\",\n  \"time\": \"\",\n  \"party_size\": 1,\n  \"item\": \"\"\n}"
+  },
+  {
+    "request": "Can you reserve a table for 3 people in Bengaluru this weekend at 8 AM?",
+    "expected": {
+      "intent": "restaurant_booking",
+      "destination": "Bengaluru",
+      "date": "this weekend",
+      "time": "8 AM",
+      "party_size": 3,
+      "item": null
+    },
+    "predicted": {
+      "intent": "restaurant_booking",
+      "destination": "Bengaluru",
+      "date": "this weekend",
+      "time": "8 AM",
+      "party_size": 3,
+      "item": null
+    },
+    "raw_response": "{\n  \"intent\": \"restaurant_booking\",\n  \"destination\": \"Bengaluru\",\n  \"date\": \"this weekend\",\n  \"time\": \"8 AM\",\n  \"party_size\": 3,\n  \"item\": null\n}"
+  },
+  {
+    "request": "Show me available flights to Chennai.",
+    "expected": {
+      "intent": "flight_search",
+      "destination": "Chennai",
+      "date": null,
+      "time": null,
+      "party_size": null,
+      "item": null
+    },
+    "predicted": {
+      "destination": "Chennai",
+      "date": "",
+      "time": "",
+      "party_size": null,
+      "item": "flights"
+    },
+    "raw_response": "```json\n{\n  \"destination\": \"Chennai\",\n  \"date\": \"\",\n  \"time\": \"\",\n  \"party_size\": null,\n  \"item\": \"flights\"\n}\n```"
+  },
+  {
+    "request": "Check delivery status for order ORD85674.",
+    "expected": {
+      "intent": "order_tracking",
+      "destination": null,
+      "date": null,
+      "time": null,
+      "party_size": null,
+      "item": "ORD85674"
+    },
+    "predicted": {
+      "intent": "order tracking",
+      "destination": "ORD85674",
+      "date": "",
+      "time": "",
+      "party_size": null,
+      "item": ""
+    },
+    "raw_response": "{\n  \"intent\": \"order tracking\",\n  \"destination\": \"ORD85674\",\n  \"date\": \"\",\n  \"time\": \"\",\n  \"party_size\": null,\n  \"item\": \"\"\n}"
+  },
+  {
+    "request": "Find a Mexican restaurant in Delhi for 1 people on November 30 at 10 AM.",
+    "expected": {
+      "intent": "restaurant_booking",
+      "destination": "Delhi",
+      "date": "November 30",
+      "time": "10 AM",
+      "party_size": 1,
+      "item": "Mexican restaurant"
+    },
+    "predicted": {
+      "intent": "restaurant_booking",
+      "destination": "Delhi",
+      "date": "November 30",
+      "time": "10 AM",
+      "party_size": null,
+      "item": "Mexican restaurant"
+    },
+    "raw_response": "{\n  \"intent\": \"restaurant_booking\",\n  \"destination\": \"Delhi\",\n  \"date\": \"November 30\",\n  \"time\": \"10 AM\",\n  \"party_size\": null,\n  \"item\": \"Mexican restaurant\"\n}"
+  },
+  {
+    "request": "I want to fly to Goa next Monday.",
+    "expected": {
+      "intent": "flight_search",
+      "destination": "Goa",
+      "date": "next Monday",
+      "time": null,
+      "party_size": null,
+      "item": null
+    },
+    "predicted": {
+      "intent": "flight_search",
+      "destination": "Goa",
+      "date": "next Monday"
+    },
+    "raw_response": "{\n  \"intent\": \"flight_search\",\n  \"destination\": \"Goa\",\n  \"date\": \"next Monday\"\n}"
+  },
+  {
+    "request": "Book a flight to Hyderabad departing December 5.",
+    "expected": {
+      "intent": "flight_search",
+      "destination": "Hyderabad",
+      "date": "December 5",
+      "time": null,
+      "party_size": null,
+      "item": null
+    },
+    "predicted": {
+      "intent": "flight_search",
+      "destination": "Hyderabad",
+      "date": "December 5",
+      "time": "",
+      "party_size": null,
+      "item": ""
+    },
+    "raw_response": "{\n  \"intent\": \"flight_search\",\n  \"destination\": \"Hyderabad\",\n  \"date\": \"December 5\",\n  \"time\": \"\",\n  \"party_size\": null,\n  \"item\": \"\"\n}"
+  },
+  {
+    "request": "Book a hotel room in Jaipur from December 12 for 4 people.",
+    "expected": {
+      "intent": "hotel_booking",
+      "destination": "Jaipur",
+      "date": "December 12",
+      "time": null,
+      "party_size": 4,
+      "item": null
+    },
+    "predicted": {
+      "intent": "hotel_booking",
+      "destination": "Jaipur",
+      "date": "December 12",
+      "time": "",
+      "party_size": 4,
+      "item": ""
+    },
+    "raw_response": "{\n  \"intent\": \"hotel_booking\",\n  \"destination\": \"Jaipur\",\n  \"date\": \"December 12\",\n  \"time\": \"\",\n  \"party_size\": 4,\n  \"item\": \"\"\n}"
+  },
+  {
+    "request": "Can you reserve a table for 2 people in Vijayawada tomorrow at 7 PM?",
+    "expected": {
+      "intent": "restaurant_booking",
+      "destination": "Vijayawada",
+      "date": "tomorrow",
+      "time": "7 PM",
+      "party_size": 2,
+      "item": null
+    },
+    "predicted": {
+      "intent": "restaurant_booking",
+      "destination": "Vijayawada",
+      "date": "tomorrow",
+      "time": "7 PM",
+      "party_size": 2,
+      "item": null
+    },
+    "raw_response": "{\n  \"intent\": \"restaurant_booking\",\n  \"destination\": \"Vijayawada\",\n  \"date\": \"tomorrow\",\n  \"time\": \"7 PM\",\n  \"party_size\": 2,\n  \"item\": null\n}"
+  },
+  {
+    "request": "Where can I buy wireless headphones?",
+    "expected": {
+      "intent": "product_search",
+      "destination": null,
+      "date": null,
+      "time": null,
+      "party_size": null,
+      "item": "wireless headphones"
+    },
+    "predicted": {
+      "intent": "product_search",
+      "destination": "electronics_store",
+      "date": "",
+      "time": "",
+      "party_size": null,
+      "item": "wireless_headphones"
+    },
+    "raw_response": "{\n  \"intent\": \"product_search\",\n  \"destination\": \"electronics_store\",\n  \"date\": \"\",\n  \"time\": \"\",\n  \"party_size\": null,\n  \"item\": \"wireless_headphones\"\n}"
+  },
+  {
+    "request": "Search for hotels in Jaipur starting January 10.",
+    "expected": {
+      "intent": "hotel_booking",
+      "destination": "Jaipur",
+      "date": "January 10",
+      "time": null,
+      "party_size": null,
+      "item": null
+    },
+    "predicted": {
+      "intent": "hotel_search",
+      "destination": "Jaipur",
+      "date": "January 10",
+      "time": "",
+      "party_size": null,
+      "item": ""
+    },
+    "raw_response": "{\n  \"intent\": \"hotel_search\",\n  \"destination\": \"Jaipur\",\n  \"date\": \"January 10\",\n  \"time\": \"\",\n  \"party_size\": null,\n  \"item\": \"\"\n}"
+  },
+  {
+    "request": "Tell me the weather forecast for Delhi.",
+    "expected": {
+      "intent": "weather_query",
+      "destination": "Delhi",
+      "date": null,
+      "time": null,
+      "party_size": null,
+      "item": null
+    },
+    "predicted": {
+      "intent": "weather_query",
+      "destination": "Delhi",
+      "date": "",
+      "time": "",
+      "party_size": null,
+      "item": ""
+    },
+    "raw_response": "{\n  \"intent\": \"weather_query\",\n  \"destination\": \"Delhi\",\n  \"date\": \"\",\n  \"time\": \"\",\n  \"party_size\": null,\n  \"item\": \"\"\n}"
+  },
+  {
+    "request": "Find me smart watches.",
+    "expected": {
+      "intent": "product_search",
+      "destination": null,
+      "date": null,
+      "time": null,
+      "party_size": null,
+      "item": "smart watches"
+    },
+    "predicted": {
+      "intent": "search",
+      "destination": "smart_watches",
+      "date": "",
+      "time": "",
+      "party_size": null,
+      "item": "smart_watches"
+    },
+    "raw_response": "{\n  \"intent\": \"search\",\n  \"destination\": \"smart_watches\",\n  \"date\": \"\",\n  \"time\": \"\",\n  \"party_size\": null,\n  \"item\": \"smart_watches\"\n}"
+  },
+  {
+    "request": "Find me Bluetooth speakers.",
+    "expected": {
+      "intent": "product_search",
+      "destination": null,
+      "date": null,
+      "time": null,
+      "party_size": null,
+      "item": "Bluetooth speakers"
+    },
+    "predicted": {
+      "intent": "product_search",
+      "destination": "Bluetooth speakers",
+      "date": "",
+      "time": "",
+      "party_size": null,
+      "item": "Bluetooth speaker"
+    },
+    "raw_response": "{\n  \"intent\": \"product_search\",\n  \"destination\": \"Bluetooth speakers\",\n  \"date\": \"\",\n  \"time\": \"\",\n  \"party_size\": null,\n  \"item\": \"Bluetooth speaker\"\n}"
+  },
+  {
+    "request": "Track my order ORD98696.",
+    "expected": {
+      "intent": "order_tracking",
+      "destination": null,
+      "date": null,
+      "time": null,
+      "party_size": null,
+      "item": "ORD98696"
+    },
+    "predicted": {
+      "intent": "order_tracking",
+      "destination": "ORD98696",
+      "date": "",
+      "time": "",
+      "party_size": null,
+      "item": ""
+    },
+    "raw_response": "{\n  \"intent\": \"order_tracking\",\n  \"destination\": \"ORD98696\",\n  \"date\": \"\",\n  \"time\": \"\",\n  \"party_size\": null,\n  \"item\": \"\"\n}"
+  },
+  {
+    "request": "Show me available running shoes.",
+    "expected": {
+      "intent": "product_search",
+      "destination": null,
+      "date": null,
+      "time": null,
+      "party_size": null,
+      "item": "running shoes"
+    },
+    "predicted": {
+      "destination": "running_shoes",
+      "date": "",
+      "time": "",
+      "party_size": null,
+      "item": "running_shoes"
+    },
+    "raw_response": "```json\n{\n  \"destination\": \"running_shoes\",\n  \"date\": \"\",\n  \"time\": \"\",\n  \"party_size\": null,\n  \"item\": \"running_shoes\"\n}\n```"
+  },
+  {
+    "request": "I need accommodation in Kolkata for 5 guests.",
+    "expected": {
+      "intent": "hotel_booking",
+      "destination": "Kolkata",
+      "date": null,
+      "time": null,
+      "party_size": 5,
+      "item": null
+    },
+    "predicted": {
+      "intent": "hotel_booking",
+      "destination": "Kolkata",
+      "date": "2023-10-01",
+      "time": "",
+      "party_size": 5,
+      "item": ""
+    },
+    "raw_response": "{\n  \"intent\": \"hotel_booking\",\n  \"destination\": \"Kolkata\",\n  \"date\": \"2023-10-01\",\n  \"time\": \"\",\n  \"party_size\": 5,\n  \"item\": \"\"\n}"
+  },
+  {
+    "request": "Where is shipment ORD38221?",
+    "expected": {
+      "intent": "order_tracking",
+      "destination": null,
+      "date": null,
+      "time": null,
+      "party_size": null,
+      "item": "ORD38221"
+    },
+    "predicted": {
+      "destination": "ORD38221",
+      "item": null,
+      "party_size": null
+    },
+    "raw_response": "{\n  \"destination\": \"ORD38221\",\n  \"item\": null,\n  \"party_size\": null\n}"
+  },
+  {
+    "request": "Find a Japanese restaurant in Delhi for 5 people on this weekend at 7 PM.",
+    "expected": {
+      "intent": "restaurant_booking",
+      "destination": "Delhi",
+      "date": "this weekend",
+      "time": "7 PM",
+      "party_size": 5,
+      "item": "Japanese restaurant"
+    },
+    "predicted": {
+      "intent": "restaurant_booking",
+      "destination": "Delhi",
+      "date": "this weekend",
+      "time": "7 PM",
+      "party_size": 5,
+      "item": "Japanese restaurant"
+    },
+    "raw_response": "{\n  \"intent\": \"restaurant_booking\",\n  \"destination\": \"Delhi\",\n  \"date\": \"this weekend\",\n  \"time\": \"7 PM\",\n  \"party_size\": 5,\n  \"item\": \"Japanese restaurant\"\n}"
+  },
+  {
+    "request": "Search for an air ticket to Hyderabad for next Monday.",
+    "expected": {
+      "intent": "flight_search",
+      "destination": "Hyderabad",
+      "date": "next Monday",
+      "time": null,
+      "party_size": null,
+      "item": null
+    },
+    "predicted": {
+      "intent": "air_ticket",
+      "destination": "Hyderabad",
+      "date": "next Monday",
+      "time": "",
+      "party_size": null,
+      "item": ""
+    },
+    "raw_response": "{\n  \"intent\": \"air_ticket\",\n  \"destination\": \"Hyderabad\",\n  \"date\": \"next Monday\",\n  \"time\": \"\",\n  \"party_size\": null,\n  \"item\": \"\"\n}"
+  },
+  {
+    "request": "What is the weather in Vijayawada?",
+    "expected": {
+      "intent": "weather_query",
+      "destination": "Vijayawada",
+      "date": null,
+      "time": null,
+      "party_size": null,
+      "item": null
+    },
+    "predicted": {
+      "intent": "weather_query",
+      "destination": "Vijayawada",
+      "date": "",
+      "time": "",
+      "party_size": null,
+      "item": ""
+    },
+    "raw_response": "{\n  \"intent\": \"weather_query\",\n  \"destination\": \"Vijayawada\",\n  \"date\": \"\",\n  \"time\": \"\",\n  \"party_size\": null,\n  \"item\": \"\"\n}"
+  },
+  {
+    "request": "Show me available flights to Jaipur.",
+    "expected": {
+      "intent": "flight_search",
+      "destination": "Jaipur",
+      "date": null,
+      "time": null,
+      "party_size": null,
+      "item": null
+    },
+    "predicted": {
+      "destination": "Jaipur",
+      "date": "",
+      "time": "",
+      "party_size": null,
+      "item": "flights"
+    },
+    "raw_response": "```json\n{\n  \"destination\": \"Jaipur\",\n  \"date\": \"\",\n  \"time\": \"\",\n  \"party_size\": null,\n  \"item\": \"flights\"\n}\n```"
+  },
+  {
+    "request": "Check today's weather in Jaipur.",
+    "expected": {
+      "intent": "weather_query",
+      "destination": "Jaipur",
+      "date": null,
+      "time": null,
+      "party_size": null,
+      "item": null
+    },
+    "predicted": {
+      "intent": "weather_query",
+      "destination": "Jaipur",
+      "date": null,
+      "time": null,
+      "party_size": null,
+      "item": null
+    },
+    "raw_response": "```json\n{\n  \"intent\": \"weather_query\",\n  \"destination\": \"Jaipur\",\n  \"date\": null,\n  \"time\": null,\n  \"party_size\": null,\n  \"item\": null\n}\n```"
+  },
+  {
+    "request": "Find a Italian restaurant in Goa for 5 people on tomorrow at 5:30 PM.",
+    "expected": {
+      "intent": "restaurant_booking",
+      "destination": "Goa",
+      "date": "tomorrow",
+      "time": "5:30 PM",
+      "party_size": 5,
+      "item": "Italian restaurant"
+    },
+    "predicted": {
+      "intent": "restaurant_booking",
+      "destination": "Goa",
+      "date": "tomorrow",
+      "time": "16:30",
+      "party_size": 5,
+      "item": "Italian restaurant"
+    },
+    "raw_response": "{\n  \"intent\": \"restaurant_booking\",\n  \"destination\": \"Goa\",\n  \"date\": \"tomorrow\",\n  \"time\": \"16:30\",\n  \"party_size\": 5,\n  \"item\": \"Italian restaurant\"\n}"
+  },
+  {
+    "request": "I want to fly to Vijayawada next Monday.",
+    "expected": {
+      "intent": "flight_search",
+      "destination": "Vijayawada",
+      "date": "next Monday",
+      "time": null,
+      "party_size": null,
+      "item": null
+    },
+    "predicted": {
+      "intent": "flight_search",
+      "destination": "Vijayawada",
+      "date": "next Monday"
+    },
+    "raw_response": "{\n  \"intent\": \"flight_search\",\n  \"destination\": \"Vijayawada\",\n  \"date\": \"next Monday\"\n}"
+  },
+  {
+    "request": "Find a Indian restaurant in Vijayawada for 2 people on today at 10 AM.",
+    "expected": {
+      "intent": "restaurant_booking",
+      "destination": "Vijayawada",
+      "date": "today",
+      "time": "10 AM",
+      "party_size": 2,
+      "item": "Indian restaurant"
+    },
+    "predicted": {
+      "intent": "restaurant_booking",
+      "destination": "Vijayawada",
+      "date": "today",
+      "time": "10 AM",
+      "party_size": 2,
+      "item": "Indian"
+    },
+    "raw_response": "{\n  \"intent\": \"restaurant_booking\",\n  \"destination\": \"Vijayawada\",\n  \"date\": \"today\",\n  \"time\": \"10 AM\",\n  \"party_size\": 2,\n  \"item\": \"Indian\"\n}"
+  },
+  {
+    "request": "I need accommodation in Pune for 6 guests.",
+    "expected": {
+      "intent": "hotel_booking",
+      "destination": "Pune",
+      "date": null,
+      "time": null,
+      "party_size": 6,
+      "item": null
+    },
+    "predicted": {
+      "intent": "hotel_booking",
+      "destination": "Pune",
+      "date": "today",
+      "time": "",
+      "party_size": 6,
+      "item": ""
+    },
+    "raw_response": "{\n  \"intent\": \"hotel_booking\",\n  \"destination\": \"Pune\",\n  \"date\": \"today\",\n  \"time\": \"\",\n  \"party_size\": 6,\n  \"item\": \"\"\n}"
+  },
+  {
+    "request": "Where is shipment ORD56566?",
+    "expected": {
+      "intent": "order_tracking",
+      "destination": null,
+      "date": null,
+      "time": null,
+      "party_size": null,
+      "item": "ORD56566"
+    },
+    "predicted": {
+      "destination": "ORD56566",
+      "date": "",
+      "time": "",
+      "party_size": null,
+      "item": ""
+    },
+    "raw_response": "{\n  \"destination\": \"ORD56566\",\n  \"date\": \"\",\n  \"time\": \"\",\n  \"party_size\": null,\n  \"item\": \"\"\n}"
+  },
+  {
+    "request": "Book a flight to Jaipur departing December 5.",
+    "expected": {
+      "intent": "flight_search",
+      "destination": "Jaipur",
+      "date": "December 5",
+      "time": null,
+      "party_size": null,
+      "item": null
+    },
+    "predicted": {
+      "intent": "flight_search",
+      "destination": "Jaipur",
+      "date": "December 5",
+      "time": "",
+      "party_size": null,
+      "item": ""
+    },
+    "raw_response": "{\n  \"intent\": \"flight_search\",\n  \"destination\": \"Jaipur\",\n  \"date\": \"December 5\",\n  \"time\": \"\",\n  \"party_size\": null,\n  \"item\": \"\"\n}"
+  },
+  {
+    "request": "I want to purchase running shoes.",
+    "expected": {
+      "intent": "product_search",
+      "destination": null,
+      "date": null,
+      "time": null,
+      "party_size": null,
+      "item": "running shoes"
+    },
+    "predicted": {
+      "intent": "product_search",
+      "destination": "running_shoes",
+      "date": "",
+      "time": "",
+      "party_size": null,
+      "item": ""
+    },
+    "raw_response": "{\n  \"intent\": \"product_search\",\n  \"destination\": \"running_shoes\",\n  \"date\": \"\",\n  \"time\": \"\",\n  \"party_size\": null,\n  \"item\": \"\"\n}"
+  },
+  {
+    "request": "I want to purchase running shoes.",
+    "expected": {
+      "intent": "product_search",
+      "destination": null,
+      "date": null,
+      "time": null,
+      "party_size": null,
+      "item": "running shoes"
+    },
+    "predicted": {
+      "intent": "product_search",
+      "destination": "running_shoes",
+      "date": "",
+      "time": "",
+      "party_size": null,
+      "item": ""
+    },
+    "raw_response": "{\n  \"intent\": \"product_search\",\n  \"destination\": \"running_shoes\",\n  \"date\": \"\",\n  \"time\": \"\",\n  \"party_size\": null,\n  \"item\": \"\"\n}"
+  },
+  {
+    "request": "I want to track parcel ORD21395.",
+    "expected": {
+      "intent": "order_tracking",
+      "destination": null,
+      "date": null,
+      "time": null,
+      "party_size": null,
+      "item": "ORD21395"
+    },
+    "predicted": {
+      "intent": "order_tracking",
+      "destination": "ORD21395",
+      "date": "",
+      "time": "",
+      "party_size": null,
+      "item": ""
+    },
+    "raw_response": "{\n  \"intent\": \"order_tracking\",\n  \"destination\": \"ORD21395\",\n  \"date\": \"\",\n  \"time\": \"\",\n  \"party_size\": null,\n  \"item\": \"\"\n}"
+  },
+  {
+    "request": "How is the weather looking in Delhi?",
+    "expected": {
+      "intent": "weather_query",
+      "destination": "Delhi",
+      "date": null,
+      "time": null,
+      "party_size": null,
+      "item": null
+    },
+    "predicted": {
+      "intent": "weather_query",
+      "destination": null,
+      "date": "null",
+      "time": null,
+      "party_size": null,
+      "item": "weather"
+    },
+    "raw_response": "{\n  \"intent\": \"weather_query\",\n  \"destination\": null,\n  \"date\": \"null\",\n  \"time\": null,\n  \"party_size\": null,\n  \"item\": \"weather\"\n}"
+  },
+  {
+    "request": "Reserve a hotel in Jaipur for 6 people.",
+    "expected": {
+      "intent": "hotel_booking",
+      "destination": "Jaipur",
+      "date": null,
+      "time": null,
+      "party_size": 6,
+      "item": null
+    },
+    "predicted": {
+      "intent": "hotel_booking",
+      "destination": "Jaipur",
+      "date": "2023-10-05",
+      "time": "14:00",
+      "party_size": 6,
+      "item": "Hotel"
+    },
+    "raw_response": "{\n  \"intent\": \"hotel_booking\",\n  \"destination\": \"Jaipur\",\n  \"date\": \"2023-10-05\",\n  \"time\": \"14:00\",\n  \"party_size\": 6,\n  \"item\": \"Hotel\"\n}"
+  },
+  {
+    "request": "Track my order ORD30926.",
+    "expected": {
+      "intent": "order_tracking",
+      "destination": null,
+      "date": null,
+      "time": null,
+      "party_size": null,
+      "item": "ORD30926"
+    },
+    "predicted": {
+      "intent": "order_tracking",
+      "destination": "ORD30926",
+      "date": "",
+      "time": "",
+      "party_size": null,
+      "item": ""
+    },
+    "raw_response": "{\n  \"intent\": \"order_tracking\",\n  \"destination\": \"ORD30926\",\n  \"date\": \"\",\n  \"time\": \"\",\n  \"party_size\": null,\n  \"item\": \"\"\n}"
+  },
+  {
+    "request": "I need accommodation in Vijayawada for 4 guests.",
+    "expected": {
+      "intent": "hotel_booking",
+      "destination": "Vijayawada",
+      "date": null,
+      "time": null,
+      "party_size": 4,
+      "item": null
+    },
+    "predicted": {
+      "intent": "hotel_booking",
+      "destination": "Vijayawada",
+      "date": "today",
+      "time": "",
+      "party_size": 4,
+      "item": ""
+    },
+    "raw_response": "{\n  \"intent\": \"hotel_booking\",\n  \"destination\": \"Vijayawada\",\n  \"date\": \"today\",\n  \"time\": \"\",\n  \"party_size\": 4,\n  \"item\": \"\"\n}"
+  },
+  {
+    "request": "Tell me the weather forecast for Pune.",
+    "expected": {
+      "intent": "weather_query",
+      "destination": "Pune",
+      "date": null,
+      "time": null,
+      "party_size": null,
+      "item": null
+    },
+    "predicted": {
+      "intent": "weather_query",
+      "destination": "Pune",
+      "date": "",
+      "time": "",
+      "party_size": null,
+      "item": ""
+    },
+    "raw_response": "{\n  \"intent\": \"weather_query\",\n  \"destination\": \"Pune\",\n  \"date\": \"\",\n  \"time\": \"\",\n  \"party_size\": null,\n  \"item\": \"\"\n}"
+  },
+  {
+    "request": "Find a Thai restaurant in Kolkata for 6 people on November 30 at 12 PM.",
+    "expected": {
+      "intent": "restaurant_booking",
+      "destination": "Kolkata",
+      "date": "November 30",
+      "time": "12 PM",
+      "party_size": 6,
+      "item": "Thai restaurant"
+    },
+    "predicted": {
+      "intent": "restaurant_booking",
+      "destination": "Thailand",
+      "date": "November 30",
+      "time": "12 PM",
+      "party_size": 6,
+      "item": "Thai cuisine"
+    },
+    "raw_response": "{\n  \"intent\": \"restaurant_booking\",\n  \"destination\": \"Thailand\",\n  \"date\": \"November 30\",\n  \"time\": \"12 PM\",\n  \"party_size\": 6,\n  \"item\": \"Thai cuisine\"\n}"
+  },
+  {
+    "request": "Tell me the weather forecast for Goa.",
+    "expected": {
+      "intent": "weather_query",
+      "destination": "Goa",
+      "date": null,
+      "time": null,
+      "party_size": null,
+      "item": null
+    },
+    "predicted": {
+      "intent": "weather_query",
+      "destination": "Goa",
+      "date": "",
+      "time": "",
+      "party_size": null,
+      "item": ""
+    },
+    "raw_response": "{\n  \"intent\": \"weather_query\",\n  \"destination\": \"Goa\",\n  \"date\": \"\",\n  \"time\": \"\",\n  \"party_size\": null,\n  \"item\": \"\"\n}"
+  },
+  {
+    "request": "I want to track parcel ORD58520.",
+    "expected": {
+      "intent": "order_tracking",
+      "destination": null,
+      "date": null,
+      "time": null,
+      "party_size": null,
+      "item": "ORD58520"
+    },
+    "predicted": {
+      "intent": "order_tracking",
+      "destination": "ORD58520",
+      "date": "",
+      "time": "",
+      "party_size": null,
+      "item": ""
+    },
+    "raw_response": "{\n  \"intent\": \"order_tracking\",\n  \"destination\": \"ORD58520\",\n  \"date\": \"\",\n  \"time\": \"\",\n  \"party_size\": null,\n  \"item\": \"\"\n}"
+  },
+  {
+    "request": "Show me available flights to Goa.",
+    "expected": {
+      "intent": "flight_search",
+      "destination": "Goa",
+      "date": null,
+      "time": null,
+      "party_size": null,
+      "item": null
+    },
+    "predicted": {
+      "destination": "Goa",
+      "date": "",
+      "time": "",
+      "party_size": null,
+      "item": "flights"
+    },
+    "raw_response": "```json\n{\n  \"destination\": \"Goa\",\n  \"date\": \"\",\n  \"time\": \"\",\n  \"party_size\": null,\n  \"item\": \"flights\"\n}\n```"
+  },
+  {
+    "request": "What is the weather in Kolkata?",
+    "expected": {
+      "intent": "weather_query",
+      "destination": "Kolkata",
+      "date": null,
+      "time": null,
+      "party_size": null,
+      "item": null
+    },
+    "predicted": {
+      "intent": "weather_query",
+      "destination": null,
+      "date": "today",
+      "time": null,
+      "party_size": null,
+      "item": null
+    },
+    "raw_response": "{\n  \"intent\": \"weather_query\",\n  \"destination\": null,\n  \"date\": \"today\",\n  \"time\": null,\n  \"party_size\": null,\n  \"item\": null\n}"
+  },
+  {
+    "request": "Check today's weather in Mumbai.",
+    "expected": {
+      "intent": "weather_query",
+      "destination": "Mumbai",
+      "date": null,
+      "time": null,
+      "party_size": null,
+      "item": null
+    },
+    "predicted": {
+      "intent": "weather_query",
+      "destination": null,
+      "date": "today",
+      "time": null,
+      "party_size": null,
+      "item": null
+    },
+    "raw_response": "{\n  \"intent\": \"weather_query\",\n  \"destination\": null,\n  \"date\": \"today\",\n  \"time\": null,\n  \"party_size\": null,\n  \"item\": null\n}"
+  },
+  {
+    "request": "Find a Mexican restaurant in Hyderabad for 3 people on this weekend at 6 PM.",
+    "expected": {
+      "intent": "restaurant_booking",
+      "destination": "Hyderabad",
+      "date": "this weekend",
+      "time": "6 PM",
+      "party_size": 3,
+      "item": "Mexican restaurant"
+    },
+    "predicted": {
+      "intent": "restaurant_booking",
+      "destination": "Mexico",
+      "date": "Saturday",
+      "time": "18:00",
+      "party_size": 3,
+      "item": "Mexican cuisine"
+    },
+    "raw_response": "{\n  \"intent\": \"restaurant_booking\",\n  \"destination\": \"Mexico\",\n  \"date\": \"Saturday\",\n  \"time\": \"18:00\",\n  \"party_size\": 3,\n  \"item\": \"Mexican cuisine\"\n}"
+  }
+]

@@ -1,0 +1,58 @@
+{
+  "model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "dataset": {
+    "total": 510,
+    "training": 400,
+    "validation": 50,
+    "testing": 60,
+    "seed": 42
+  },
+  "lora_settings": {
+    "rank": 8,
+    "alpha": 16,
+    "dropout": 0.05,
+    "target_modules": [
+      "q_proj",
+      "k_proj",
+      "v_proj",
+      "o_proj",
+      "gate_proj",
+      "up_proj",
+      "down_proj"
+    ],
+    "learning_rate": 0.0002,
+    "epochs": 3,
+    "batch_size": 4,
+    "gradient_accumulation": 4
+  },
+  "baseline_metrics": {
+    "json_validity": 100.0,
+    "exact_match": 8.33,
+    "intent_accuracy": 76.67,
+    "field_accuracy": 52.78
+  },
+  "finetuned_metrics": {
+    "json_validity": 100.0,
+    "exact_match": 100.0,
+    "intent_accuracy": 100.0,
+    "field_accuracy": 100.0
+  },
+  "training_history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.016035941238369558,
+      "validation_loss": 0.002261194895254448
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.0009126147333881817,
+      "validation_loss": 0.0016849395984676308
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.0011100932750559877,
+      "validation_loss": 0.0036574219131860165
+    }
+  ],
+  "failure_count": 0
+}

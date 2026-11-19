@@ -1,0 +1,193 @@
+[
+    {
+        "id": 1,
+        "question": "What is the purpose of the NIST AI Risk Management Framework?",
+        "anchors": [
+            "AI RMF",
+            "risk management"
+        ],
+        "gold_pages": [
+            1,
+            2,
+            3,
+            6
+        ]
+    },
+    {
+        "id": 2,
+        "question": "What are the four core functions of the AI RMF?",
+        "anchors": [
+            "GOVERN",
+            "MAP",
+            "MEASURE",
+            "MANAGE"
+        ],
+        "gold_pages": [
+            5,
+            6
+        ]
+    },
+    {
+        "id": 3,
+        "question": "What is the purpose of the GOVERN function?",
+        "anchors": [
+            "GOVERN"
+        ],
+        "gold_pages": [
+            24,
+            25,
+            26,
+            27,
+            28,
+            29
+        ]
+    },
+    {
+        "id": 4,
+        "question": "What activities are included in the MAP function?",
+        "anchors": [
+            "MAP"
+        ],
+        "gold_pages": [
+            30,
+            31,
+            32
+        ]
+    },
+    {
+        "id": 5,
+        "question": "What is the purpose of the MEASURE function?",
+        "anchors": [
+            "MEASURE"
+        ],
+        "gold_pages": [
+            33,
+            34,
+            35,
+            36
+        ]
+    },
+    {
+        "id": 6,
+        "question": "What is the purpose of the MANAGE function?",
+        "anchors": [
+            "MANAGE"
+        ],
+        "gold_pages": [
+            37,
+            38,
+            39,
+            40
+        ]
+    },
+    {
+        "id": 7,
+        "question": "Why should AI systems be valid and reliable?",
+        "anchors": [
+            "valid and reliable"
+        ],
+        "gold_pages": [
+            17,
+            18
+        ]
+    },
+    {
+        "id": 8,
+        "question": "What does safety mean in the context of trustworthy AI?",
+        "anchors": [
+            "safe",
+            "safety"
+        ],
+        "gold_pages": [
+            19,
+            20
+        ]
+    },
+    {
+        "id": 9,
+        "question": "How are security and resilience considered in trustworthy AI?",
+        "anchors": [
+            "secure and resilient"
+        ],
+        "gold_pages": [
+            20,
+            21
+        ]
+    },
+    {
+        "id": 10,
+        "question": "Why are accountability and transparency important in AI?",
+        "anchors": [
+            "accountable",
+            "transparent"
+        ],
+        "gold_pages": [
+            20,
+            21,
+            27
+        ]
+    },
+    {
+        "id": 11,
+        "question": "What is the difference between explainability and interpretability?",
+        "anchors": [
+            "explainable",
+            "interpretable"
+        ],
+        "gold_pages": [
+            21,
+            22
+        ]
+    },
+    {
+        "id": 12,
+        "question": "How does the framework address privacy?",
+        "anchors": [
+            "privacy"
+        ],
+        "gold_pages": [
+            22
+        ]
+    },
+    {
+        "id": 13,
+        "question": "How should fairness and harmful bias be considered?",
+        "anchors": [
+            "fair",
+            "bias"
+        ],
+        "gold_pages": [
+            22,
+            23
+        ]
+    },
+    {
+        "id": 14,
+        "question": "Who are AI actors in the AI risk management process?",
+        "anchors": [
+            "AI actors"
+        ],
+        "gold_pages": [
+            7,
+            13,
+            14,
+            15,
+            16
+        ]
+    },
+    {
+        "id": 15,
+        "question": "How should organizations determine their risk tolerance?",
+        "anchors": [
+            "risk tolerance"
+        ],
+        "gold_pages": [
+            12,
+            27,
+            31,
+            34,
+            35,
+            38
+        ]
+    }
+]
