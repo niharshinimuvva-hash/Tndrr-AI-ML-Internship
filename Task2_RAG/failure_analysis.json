@@ -1,0 +1,76 @@
+{
+  "metric_context": "Question-level Hit Rate@5",
+  "documented_failures": 2,
+  "failures": [
+    {
+      "id": 1,
+      "question": "What does the framework recommend when an AI system operates beyond its knowledge limits?",
+      "original_top5_pages": [
+        44,
+        6,
+        7,
+        43,
+        30
+      ],
+      "relevant_page": 35,
+      "expanded_query_concepts": [
+        "fail-safe operation",
+        "safety risks",
+        "residual negative risk",
+        "reliability",
+        "robustness",
+        "monitoring",
+        "failure response"
+      ],
+      "expanded_top5_pages": [
+        19,
+        20,
+        35,
+        43,
+        9
+      ],
+      "successful_fix": true,
+      "relevant_page_rank_after_expansion": 3
+    },
+    {
+      "id": 2,
+      "question": "What is the purpose of the MANAGE function?",
+      "chunk_size_words": 600,
+      "original_top5_pages": [
+        28,
+        46,
+        25,
+        26,
+        27
+      ],
+      "expected_evidence_pages": [
+        37,
+        38,
+        39,
+        40
+      ],
+      "expanded_query_concepts": [
+        "risk treatment",
+        "prioritization",
+        "response and recovery",
+        "incident management",
+        "post-deployment monitoring",
+        "risk mitigation",
+        "documentation",
+        "communication"
+      ],
+      "expanded_top5_pages": [
+        25,
+        37,
+        38,
+        47,
+        8
+      ],
+      "successful_fix": true,
+      "relevant_pages_ranks_after_expansion": {
+        "37": 2,
+        "38": 3
+      }
+    }
+  ]
+}

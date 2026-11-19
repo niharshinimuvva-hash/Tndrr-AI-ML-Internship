@@ -1,0 +1,40 @@
+{
+  "id": 2,
+  "question": "What is the purpose of the MANAGE function?",
+  "chunk_size_words": 600,
+  "original_top5_pages": [
+    28,
+    46,
+    25,
+    26,
+    27
+  ],
+  "expected_evidence_pages": [
+    37,
+    38,
+    39,
+    40
+  ],
+  "expanded_query_concepts": [
+    "risk treatment",
+    "prioritization",
+    "response and recovery",
+    "incident management",
+    "post-deployment monitoring",
+    "risk mitigation",
+    "documentation",
+    "communication"
+  ],
+  "expanded_top5_pages": [
+    25,
+    37,
+    38,
+    47,
+    8
+  ],
+  "successful_fix": true,
+  "relevant_pages_ranks_after_expansion": {
+    "37": 2,
+    "38": 3
+  }
+}

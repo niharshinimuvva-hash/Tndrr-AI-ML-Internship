@@ -1,0 +1,3 @@
+chunk_size_words,questions,hits,hit_rate_at_5_percent
+300,15,15,100.0
+600,15,14,93.33

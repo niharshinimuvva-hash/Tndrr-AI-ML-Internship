@@ -1,89 +1,112 @@
-# Task 2: Retrieval-Augmented Generation (RAG) from Scratch
+# Task 2: Retrieval-Augmented Generation from Scratch
 
 ## 1. Objective
 
-Build a Retrieval-Augmented Generation (RAG) retrieval pipeline over a public document without using LangChain or LlamaIndex. The experiment compares chunk sizes and retrieval methods and evaluates retrieval quality.
+Build a retrieval pipeline from scratch over a public document, using text extraction, chunking, embeddings, and similarity search without LangChain or LlamaIndex.
 
-## 2. Document and Dataset
+## 2. Source Document and Environment
 
-- Source document: NIST AI Risk Management Framework (AI RMF 1.0)
+- Source: NIST AI Risk Management Framework (AI RMF 1.0)
 - Document length: 48 pages
-- Questions evaluated: 15
 - Embedding model: sentence-transformers/all-MiniLM-L6-v2
-- Chunking strategies: 300 words and 600 words
-- Vector similarity: dense embedding retrieval
+- Similarity search: cosine similarity using NumPy
+- Retrieval approaches explored: dense retrieval, BM25, and dense retrieval with cross-encoder reranking
+- Evaluation questions: 15
 
-The PDF was extracted into page-level text and divided into chunks. Embeddings were generated and compared using NumPy-based similarity search.
+## 3. Chunking
 
-## 3. RAG Pipeline
-
-The pipeline consists of:
-
-1. Extract text from the source PDF.
-2. Split the extracted text into chunks.
-3. Generate dense vector embeddings.
-4. Retrieve the top five relevant chunks for each question.
-5. Compare retrieval results across chunk sizes.
-6. Evaluate retrieval using Recall@5.
-
-The experiment also explored BM25 keyword retrieval and dense retrieval with cross-encoder reranking.
-
-## 4. Evaluation Results
-
-Dense retrieval was evaluated using 15 questions and manually selected primary evidence pages as relevance labels.
-
-| Chunk size | Recall@5 |
+| Configuration | Chunk count |
 |---|---:|
-| 300 words | 65.44% |
-| 600 words | 49.33% |
+| 300-word chunks | 82 |
+| 600-word chunks | 48 |
 
-The 300-word chunk configuration performed better by 16.11 percentage points in this evaluation.
+Two chunk sizes were evaluated to examine how chunk granularity affects retrieval performance.
 
-The relevance labels were manually selected and are provisional. The reported comparison is specifically for dense retrieval.
+## 4. Evaluation Method
 
-## 5. Retrieval Failure Analysis
+The evaluation uses manually selected primary evidence pages for each of the 15 questions. These relevance labels were corrected after inspecting the source document.
 
-One genuine retrieval failure and its successful fix were documented.
+The reported metric is question-level Hit Rate@5, defined as:
+
+`Hit Rate@5 = (Number of questions with at least one relevant page in the top 5 / Total questions) × 100`
+
+A question is counted as a hit when at least one manually labelled relevant evidence page appears among the five highest-ranked retrieved results. It does not measure the proportion of all relevant pages retrieved, so it is not conventional Recall@5.
+
+## 5. Corrected Evaluation Results
+
+| Chunk size | Questions | Hit Rate@5 |
+|---|---:|---:|
+| 300 words | 15 | 100.00% (15/15) |
+| 600 words | 15 | 93.33% (14/15) |
+
+The 300-word configuration retrieved at least one relevant page in the top five for all 15 questions. The 600-word configuration did so for 14 of the 15 questions.
+
+## 6. Retrieval Failure Analysis
+
+Two retrieval failures were investigated. Both were improved using query expansion. The second failure was observed with 600-word chunks.
+
+### Failure 1: AI systems operating beyond their knowledge limits
 
 **Question:** What does the framework recommend when an AI system operates beyond its knowledge limits?
 
-- Original retrieval did not retrieve the relevant passage on page 35 in its top five results.
-- The query was expanded with related terms, including fail safely, residual negative risk, reliability, robustness, and safe operation.
-- After query expansion, page 35 appeared at rank 3 with a similarity score of 0.7101.
+- Original top-five retrieved pages: 44, 6, 7, 43, 30
+- Relevant evidence page: 35
+- Problem: The original query did not retrieve the key evidence page in the top five.
 
-The relevant passage discusses demonstrating that an AI system is safe, keeping residual negative risk within tolerance, and ensuring that systems can fail safely beyond their knowledge limits.
+**Fix:** Expanded the query with related concepts, including fail-safe operation, safety risks, residual negative risk, reliability, robustness, monitoring, and failure response.
 
-Only one genuine failure and successful fix was verified. A second failure was not established, so no additional example is claimed.
+- Expanded-query top-five pages: 19, 20, 35, 43, 9
+- Relevant page 35 was retrieved at rank 3.
+- Page 35 discusses demonstrating system safety, residual risk within tolerance, and the ability to fail safely beyond knowledge limits.
 
-## 6. BM25 and Reranking
+### Failure 2: Purpose of the MANAGE function
 
-BM25 is a keyword-based retrieval method that ranks documents using term frequency and inverse document frequency, with document-length normalization.
+**Question:** What is the purpose of the MANAGE function?
 
-A cross-encoder reranker evaluates query-passage pairs jointly and reorders retrieved candidates based on their relevance. It can improve ranking quality at the cost of additional computation.
+- Chunk configuration: 600 words
+- Original top-five retrieved pages: 28, 46, 25, 26, 27
+- Expected evidence pages: 37, 38, 39, 40
+- Problem: None of the expected evidence pages appeared in the original top five.
 
-BM25 and cross-encoder reranking were explored in this project. The quantitative Recall@5 comparison reported above uses dense retrieval.
+**Fix:** Expanded the query with risk treatment, prioritization, response and recovery, incident management, post-deployment monitoring, risk mitigation, documentation, and communication.
 
-## 7. Limitations
+- Expanded-query top-five pages: 25, 37, 38, 47, 8
+- Page 37 was retrieved at rank 2 (score 0.7662).
+- Page 38 was retrieved at rank 3 (score 0.7528).
+- Page 37 discusses risk prioritization, treatment, and response. Page 38 discusses monitoring, incident response, recovery, and communication.
 
-- The evaluation contains only 15 questions.
-- Relevance labels are manually selected and provisional.
-- Only one genuine retrieval failure and successful fix was verified.
-- Recall@5 measures retrieval quality, not the factual accuracy of generated answers.
-- The evaluation does not establish performance on other documents or domains.
+This second failure was observed with 600-word chunks. The 300-word evaluation had no misses.
 
-## 8. Conclusion
+## 7. Relevance Labels and Evaluation Caveats
 
-The experiment implemented a RAG retrieval pipeline over the NIST AI RMF document and compared 300-word and 600-word chunking strategies. The 300-word configuration achieved a higher Recall@5 score in the current evaluation.
+The evaluation uses manually selected primary evidence pages, corrected after source inspection. These labels may not capture every relevant passage. Hit Rate@5 only checks whether at least one labelled relevant page appears in the top five. Query expansion was tested on the identified failure queries and should not be interpreted as a broad benchmark improvement.
 
-Query expansion also demonstrated a practical way to address a retrieval failure by introducing semantically related terms.
+The 15-question evaluation is relatively small. Results may vary with different questions, relevance labels, chunking choices, and embedding models.
 
-## Project Files
+## 8. Technologies
 
-- `Task2_RAG_From_Scratch.ipynb`: implementation and experiments
-- `source_document.pdf`: source document
-- `extracted_pages.json`: extracted page text
-- `chunks_300.json`, `chunks_600.json`: chunked documents
-- `evaluation_questions.json`: evaluation questions and relevance labels
-- `retrieval_comparison.csv`: retrieval comparison results
-- `rag_experiment_results.json`: experiment outputs
-- `final_task2_summary.json`: final evaluation summary
+- Python
+- Sentence Transformers
+- NumPy
+- Pandas
+- BM25
+- Cross-encoder reranking
+- Google Colab
+
+## 9. Project Files
+
+- `Task2_RAG_From_Scratch.ipynb`: implementation and evaluation notebook.
+- `source_document.pdf`: NIST AI RMF source document.
+- `extracted_pages.json`: extracted document text.
+- `chunks_300.json` and `chunks_600.json`: chunked document data.
+- `evaluation_questions.json`: evaluation questions and relevance labels.
+- `retrieval_comparison.csv`: corrected chunk-size comparison.
+- `corrected_retrieval_comparison.csv`: corrected comparison results.
+- `corrected_retrieval_results.json`: corrected retrieval evaluation results.
+- `second_failure_analysis.json`: MANAGE-function failure analysis.
+- `failure_analysis.json`: consolidated record of both retrieval failures.
+- `final_task2_summary.json`: final evaluation summary.
+
+## Conclusion
+
+The implementation demonstrates a basic RAG retrieval pipeline and compares two chunk sizes. The corrected question-level Hit Rate@5 was 100.00% for 300-word chunks and 93.33% for 600-word chunks. Two retrieval failures were examined and improved through query expansion. The results are limited by the small evaluation set and manually selected relevance labels.

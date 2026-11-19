@@ -1,7 +1,3 @@
-Method,Chunk size,Recall@5 (%)
-Dense retrieval,300,100.0
-Dense retrieval,600,100.0
-BM25,300,100.0
-BM25,600,100.0
-Dense + reranker,300,100.0
-Dense + reranker,600,100.0
+chunk_size_words,questions,hits,hit_rate_at_5_percent
+300,15,15,100.0
+600,15,14,93.33

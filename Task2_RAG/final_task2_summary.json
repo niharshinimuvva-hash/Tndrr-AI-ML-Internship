@@ -1,32 +1,91 @@
 {
-    "document": "NIST AI RMF 1.0",
-    "document_pages": 48,
-    "questions_evaluated": 15,
-    "chunk_sizes": [
-        300,
-        600
-    ],
-    "evaluation": {
-        "method": "Dense retrieval Recall@5",
-        "relevance_labels": "Manually selected primary evidence pages; provisional",
-        "recall_at_5_300_words": 65.44,
-        "recall_at_5_600_words": 49.33
+  "document": "NIST AI Risk Management Framework 1.0",
+  "document_pages": 48,
+  "questions_evaluated": 15,
+  "chunk_sizes_words": [
+    300,
+    600
+  ],
+  "chunk_counts": {
+    "300_word_chunks": 82,
+    "600_word_chunks": 48
+  },
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "retrieval_methods_explored": [
+    "Dense retrieval using NumPy",
+    "BM25",
+    "Dense retrieval with cross-encoder reranking"
+  ],
+  "evaluation": {
+    "metric": "Question-level Hit Rate@5",
+    "definition": "Percentage of questions for which at least one manually labelled relevant evidence page appears in the top five retrieved results.",
+    "relevance_labels": "Manually selected primary evidence pages, corrected after source inspection.",
+    "300_word_chunks": {
+      "hits": 15,
+      "questions": 15,
+      "hit_rate_at_5_percent": 100.0
     },
-    "retrieval_methods": [
-        "Dense retrieval",
-        "BM25",
-        "Dense retrieval with cross-encoder reranking"
-    ],
-    "failure_analysis": {
-        "documented_failures": 1,
-        "successful_fixes": [
-            "Query expansion retrieved the relevant passage on page 35 at rank 3."
+    "600_word_chunks": {
+      "hits": 14,
+      "questions": 15,
+      "hit_rate_at_5_percent": 93.33
+    }
+  },
+  "failure_analysis": {
+    "documented_failures": 2,
+    "successful_fixes": [
+      {
+        "failure": "AI system operating beyond its knowledge limits",
+        "original_top5_pages": [
+          44,
+          6,
+          7,
+          43,
+          30
         ],
-        "second_failure": "Not established"
-    },
-    "limitations": [
-        "Relevance labels are manually selected and provisional.",
-        "The reported Recall@5 comparison uses dense retrieval.",
-        "Only one genuine retrieval failure and successful fix was verified."
+        "expanded_top5_pages": [
+          19,
+          20,
+          35,
+          43,
+          9
+        ],
+        "relevant_page_retrieved": 35,
+        "rank_after_query_expansion": 3
+      },
+      {
+        "failure": "Purpose of the MANAGE function",
+        "chunk_size_words": 600,
+        "original_top5_pages": [
+          28,
+          46,
+          25,
+          26,
+          27
+        ],
+        "expanded_top5_pages": [
+          25,
+          37,
+          38,
+          47,
+          8
+        ],
+        "relevant_pages_retrieved": [
+          37,
+          38
+        ],
+        "ranks_after_query_expansion": [
+          2,
+          3
+        ]
+      }
     ]
+  },
+  "limitations": [
+    "Only 15 evaluation questions were used.",
+    "Relevance labels were manually selected and may not capture every relevant passage.",
+    "Hit Rate@5 checks for at least one relevant page in the top five; it does not measure the proportion of all relevant pages retrieved.",
+    "The MANAGE-function failure was observed with 600-word chunks; the 300-word evaluation had no misses.",
+    "Query expansion was tested on the identified failure queries."
+  ]
 }
